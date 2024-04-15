@@ -1,0 +1,16 @@
+# Ignore Python virtual environment files
+venv/
+env/
+.venv/
+
+# Ignore Flask migration files
+migrations/
+
+# Ignore SQLite database file
+*.db
+*.db-journal
+
+# Ignore local development files
+__pycache__/
+*.pyc
+.vscode/
