@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///notes.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = 'your_secret_key_here'
-CORS(app)
+CORS(app, origins=['http://localhost:5173'])
 jwt = JWTManager(app)
 migrate = Migrate(app, db)
 
